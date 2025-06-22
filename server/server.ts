@@ -3,7 +3,7 @@ import cors from 'cors';
 import path from 'path';
 import swaggerUi from 'swagger-ui-express';
 import { createMockMiddleware } from 'openapi-mock-express-middleware';
-import apiSpec from './specifications/spec.json' assert { type: 'json' };
+const apiSpec = require('./specifications/spec.json');
 
 const app = express();
 const port = process.env.API_PORT || 3001;
