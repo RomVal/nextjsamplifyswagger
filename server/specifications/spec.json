@@ -1,0 +1,31 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Mock Weather API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/weather": {
+      "get": {
+        "summary": "Get weather data",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "examples": {
+                  "example1": {
+                    "value": {
+                      "temperature": "20°C",
+                      "condition": "Sunny"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
